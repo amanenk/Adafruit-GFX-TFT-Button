@@ -39,7 +39,7 @@ void TFT_Bargraph::draw(uint8_t value)
    uint8_t bar_h = _h - _h / 5;
    uint8_t bar_w = (_w - 4) / _segments;
    uint16_t bar_position = _x1 + 4;
-   uint segments_count = 0;
+   uint16_t segments_count = 0;
    while (bar_position + bar_w <= _x1 + _w)
    {
       _gfx->drawRoundRect(bar_position, _y1 + (_h - bar_h) / 2, bar_w - 2, bar_h, 2, _outlinecolor);
